@@ -13,6 +13,6 @@ spec:
         kind: GitRepository
         name: source-prometheus-stack
       valuesFiles:
-        - https://github.com/cloudnative-pg/cloudnative-pg/blob/main/docs/src/samples/monitoring/kube-stack-config.yaml
+        - https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/main/docs/src/samples/monitoring/kube-stack-config.yamll
   interval: 10s
   targetNamespace: monitoring
