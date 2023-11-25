@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: flux-helm-prometheus-stack
+  name: flux-helm-prometheus-stack1
   namespace: flux-system
 spec:
   chart:
@@ -11,7 +11,7 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
-        name: source-prometheus-stack
+        name: source-prometheus-stack1
       values:
         enabled: true
         kubeControllerManager:
