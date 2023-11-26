@@ -12,5 +12,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: source-prometheus-stack1
+      values:
+        - home/anilson/kube-stack-config.yaml
   interval: 10s
   targetNamespace: monitoring
