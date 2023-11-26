@@ -2,17 +2,15 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: flux-helm-prometheus-stack1
+  name: flux-helm-cloudnativepg2
   namespace: flux-system
 spec:
   chart:
     spec:
-      chart: charts/kube-prometheus-stack
+      chart: charts/cloudnative-pg
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
-        name: source-prometheus-stack1
-      values:
-        - home/anilson/kube-stack-config.yaml
+        name: source-cloudnativepg2
   interval: 10s
-  targetNamespace: monitoring
+  targetNamespace: cnpg-system
